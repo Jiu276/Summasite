@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Summasite</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <div class="logo"></div>
+                    <span class="brand-name">Summasite</span>
+                </div>
+                <div class="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="blog.html" class="nav-link active">Blog</a>
+                    <a href="products.html" class="nav-link">Products</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="Search..." class="search-input" id="searchInput">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="blog-main">
+        <div class="container">
+            <div class="blog-header">
+                <h1 class="blog-title">Our Blog</h1>
+                <p class="blog-subtitle">Discover sustainable living tips, product reviews, and eco-friendly lifestyle inspiration</p>
+            </div>
+
+            <div class="blog-filters">
+                <div class="filter-categories">
+                    <button class="filter-btn active" data-category="all">All Posts</button>
+                    <button class="filter-btn" data-category="green-living">Green Living</button>
+                    <button class="filter-btn" data-category="reviews">Product Reviews</button>
+                    <button class="filter-btn" data-category="beauty">Natural Beauty</button>
+                    <button class="filter-btn" data-category="fashion">Sustainable Fashion</button>
+                </div>
+                <div class="sort-options">
+                    <select class="sort-select">
+                        <option value="newest">Newest First</option>
+                        <option value="oldest">Oldest First</option>
+                        <option value="popular">Most Popular</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="blog-content">
+                <div class="posts-container" id="postsContainer">
+                    <article class="blog-post-card" data-category="reviews">
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Eco-friendly products">
+                            <div class="post-category">Product Review</div>
+                            <div class="post-overlay">
+                                <a href="post-eco-products.html" class="read-more-btn">Read More</a>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-date">March 15, 2024</span>
+                                <span class="read-time">8 min read</span>
+                                <span class="post-views">2.5k views</span>
+                            </div>
+                            <h2 class="post-title">
+                                <a href="post-eco-products.html">Top 10 Eco-Friendly Products for Sustainable Living</a>
+                            </h2>
+                            <p class="post-excerpt">Discover the best sustainable products that will help you reduce your environmental impact while maintaining quality and style in your daily life.</p>
+                            <div class="post-tags">
+                                <span class="tag">Sustainable</span>
+                                <span class="tag">Products</span>
+                                <span class="tag">Eco-friendly</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-post-card" data-category="beauty">
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Organic skincare products">
+                            <div class="post-category">Beauty</div>
+                            <div class="post-overlay">
+                                <a href="post-organic-skincare.html" class="read-more-btn">Read More</a>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-date">March 12, 2024</span>
+                                <span class="read-time">6 min read</span>
+                                <span class="post-views">1.8k views</span>
+                            </div>
+                            <h2 class="post-title">
+                                <a href="post-organic-skincare.html">Natural Skincare Routine: Organic Products That Actually Work</a>
+                            </h2>
+                            <p class="post-excerpt">Transform your skincare routine with these carefully selected organic products that deliver real results without harmful chemicals.</p>
+                            <div class="post-tags">
+                                <span class="tag">Skincare</span>
+                                <span class="tag">Organic</span>
+                                <span class="tag">Natural</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-post-card" data-category="fashion">
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Sustainable fashion">
+                            <div class="post-category">Fashion</div>
+                            <div class="post-overlay">
+                                <a href="post-sustainable-fashion.html" class="read-more-btn">Read More</a>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-date">March 10, 2024</span>
+                                <span class="read-time">5 min read</span>
+                                <span class="post-views">1.2k views</span>
+                            </div>
+                            <h2 class="post-title">
+                                <a href="post-sustainable-fashion.html">Sustainable Fashion Brands: Style Meets Responsibility</a>
+                            </h2>
+                            <p class="post-excerpt">Explore fashion brands that prioritize sustainability without compromising on style, from organic cotton to recycled materials.</p>
+                            <div class="post-tags">
+                                <span class="tag">Fashion</span>
+                                <span class="tag">Sustainable</span>
+                                <span class="tag">Ethical</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-post-card" data-category="green-living">
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Zero waste kitchen">
+                            <div class="post-category">Green Living</div>
+                            <div class="post-overlay">
+                                <a href="post-zero-waste.html" class="read-more-btn">Read More</a>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-date">March 8, 2024</span>
+                                <span class="read-time">7 min read</span>
+                                <span class="post-views">3.1k views</span>
+                            </div>
+                            <h2 class="post-title">
+                                <a href="post-zero-waste.html">Zero Waste Kitchen: Simple Steps to Reduce Food Waste</a>
+                            </h2>
+                            <p class="post-excerpt">Learn practical strategies to minimize waste in your kitchen, from meal planning to composting, and save money while helping the environment.</p>
+                            <div class="post-tags">
+                                <span class="tag">Zero Waste</span>
+                                <span class="tag">Kitchen</span>
+                                <span class="tag">Sustainable</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-post-card" data-category="reviews">
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Bamboo products">
+                            <div class="post-category">Product Review</div>
+                            <div class="post-overlay">
+                                <a href="post-bamboo-products.html" class="read-more-btn">Read More</a>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-date">March 5, 2024</span>
+                                <span class="read-time">4 min read</span>
+                                <span class="post-views">1.5k views</span>
+                            </div>
+                            <h2 class="post-title">
+                                <a href="post-bamboo-products.html">Bamboo Products Review: Sustainable Alternatives for Everyday Items</a>
+                            </h2>
+                            <p class="post-excerpt">From toothbrushes to cutting boards, discover how bamboo products can replace plastic alternatives in your daily routine.</p>
+                            <div class="post-tags">
+                                <span class="tag">Bamboo</span>
+                                <span class="tag">Review</span>
+                                <span class="tag">Sustainable</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-post-card" data-category="green-living">
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Indoor plants">
+                            <div class="post-category">Green Living</div>
+                            <div class="post-overlay">
+                                <a href="post-indoor-plants.html" class="read-more-btn">Read More</a>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-date">March 3, 2024</span>
+                                <span class="read-time">6 min read</span>
+                                <span class="post-views">2.8k views</span>
+                            </div>
+                            <h2 class="post-title">
+                                <a href="post-indoor-plants.html">Air-Purifying Plants: Natural Ways to Improve Indoor Air Quality</a>
+                            </h2>
+                            <p class="post-excerpt">Discover the best indoor plants that not only beautify your space but also naturally filter and purify the air you breathe.</p>
+                            <div class="post-tags">
+                                <span class="tag">Plants</span>
+                                <span class="tag">Air Quality</span>
+                                <span class="tag">Indoor</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="pagination" id="pagination">
+                    <button class="pagination-btn prev-btn" disabled>
+                        <i class="fas fa-chevron-left"></i>
+                        Previous
+                    </button>
+                    <div class="pagination-numbers">
+                        <button class="pagination-number active">1</button>
+                        <button class="pagination-number">2</button>
+                        <button class="pagination-number">3</button>
+                        <span class="pagination-ellipsis">...</span>
+                        <button class="pagination-number">8</button>
+                    </div>
+                    <button class="pagination-btn next-btn">
+                        Next
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <aside class="sidebar">
+        <div class="widget">
+            <h3 class="widget-title">Follow Us</h3>
+            <div class="social-links">
+                <a href="https://instagram.com/summasite" class="social-link instagram">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://facebook.com/summasite" class="social-link facebook">
+                    <i class="fab fa-facebook"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="https://twitter.com/summasite" class="social-link twitter">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                </a>
+                <a href="https://pinterest.com/summasite" class="social-link pinterest">
+                    <i class="fab fa-pinterest"></i>
+                    <span>Pinterest</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="widget">
+            <h3 class="widget-title">Newsletter</h3>
+            <p>Get the latest eco-friendly tips and product recommendations delivered to your inbox.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" class="newsletter-input">
+                <button type="submit" class="newsletter-btn">Subscribe</button>
+            </form>
+        </div>
+
+        <div class="widget">
+            <h3 class="widget-title">Popular Tags</h3>
+            <div class="tag-cloud">
+                <a href="#" class="tag">Sustainable</a>
+                <a href="#" class="tag">Organic</a>
+                <a href="#" class="tag">Eco-friendly</a>
+                <a href="#" class="tag">Green Living</a>
+                <a href="#" class="tag">Natural</a>
+                <a href="#" class="tag">Zero Waste</a>
+                <a href="#" class="tag">Vegan</a>
+                <a href="#" class="tag">Climate</a>
+            </div>
+        </div>
+    </aside>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <div class="footer-logo"></div>
+                        <span class="footer-brand-name">Summasite</span>
+                    </div>
+                    <p class="footer-description">Your trusted source for sustainable living advice, eco-friendly product reviews, and green lifestyle inspiration.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Green Living</a></li>
+                        <li><a href="#">Product Reviews</a></li>
+                        <li><a href="#">Natural Beauty</a></li>
+                        <li><a href="#">Sustainable Fashion</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Summasite. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate Realistic Images for Summasite</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            padding: 20px; 
+            background: #f8faf8;
+        }
+        .image-section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .image-item { 
+            margin: 15px 0; 
+            padding: 15px; 
+            border: 1px solid #ddd; 
+            border-radius: 8px;
+            background: #f9f9f9;
+        }
+        .image-preview {
+            max-width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+        .filename {
+            background: #4a7c59;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            display: inline-block;
+            margin: 10px 0;
+        }
+        .description {
+            color: #666;
+            font-style: italic;
+            margin: 5px 0;
+        }
+        h1 { color: #4a7c59; }
+        h2 { color: #2c2c2c; margin-top: 30px; }
+        .instructions {
+            background: #e8f5e8;
+            padding: 15px;
+            border-left: 4px solid #4a7c59;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>🌱 Summasite - Realistic Image Generator</h1>
+    
+    <div class="instructions">
+        <h3>📋 Instructions:</h3>
+        <p>Right-click on each image and select "Save image as..." then save with the filename shown below each image.</p>
+        <p>All images are sourced from Unsplash and are free to use for this project.</p>
+    </div>
+
+    <div class="image-section">
+        <h2>🏠 Hero & Main Images</h2>
+        
+        <div class="image-item">
+            <h3>Hero Nature Background</h3>
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" 
+                 alt="Forest landscape" class="image-preview">
+            <div class="filename">hero-nature.jpg</div>
+            <div class="description">Beautiful forest landscape for homepage hero section</div>
+        </div>
+
+        <div class="image-item">
+            <h3>About Hero - Team Working</h3>
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                 alt="Team collaboration" class="image-preview">
+            <div class="filename">about-hero.jpg</div>
+            <div class="description">Team working together on sustainable projects</div>
+        </div>
+    </div>
+
+    <div class="image-section">
+        <h2>📝 Blog Post Featured Images</h2>
+        
+        <div class="image-item">
+            <h3>Eco Products Collection</h3>
+            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                 alt="Eco-friendly products" class="image-preview">
+            <div class="filename">eco-products-featured.jpg</div>
+            <div class="description">Collection of sustainable everyday products</div>
+        </div>
+
+        <div class="image-item">
+            <h3>Organic Skincare Setup</h3>
+            <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                 alt="Natural skincare products" class="image-preview">
+            <div class="filename">organic-skincare-routine.jpg</div>
+            <div class="description">Natural skincare products arranged beautifully</div>
+        </div>
+
+        <div class="image-item">
+            <h3>Sustainable Fashion</h3>
+            <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                 alt="Sustainable clothing" class="image-preview">
+            <div class="filename">sustainable-fashion-hero.jpg</div>
+            <div class="description">Sustainable and ethical fashion pieces</div>
+        </div>
+    </div>
+
+    <div class="image-section">
+        <h2>🧴 Individual Product Images</h2>
+        
+        <div class="image-item">
+            <h3>Bamboo Toothbrushes</h3>
+            <img src="https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" 
+                 alt="Bamboo toothbrushes" class="image-preview">
+            <div class="filename">bamboo-toothbrush.jpg</div>
+            <div class="description">Set of bamboo toothbrushes</div>
+        </div>
+
+        <div class="image-item">
+            <h3>Stainless Steel Water Bottle</h3>
+            <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" 
+                 alt="Steel water bottle" class="image-preview">
+            <div class="filename">stainless-water-bottle.jpg</div>
+            <div class="description">Insulated stainless steel water bottle</div>
+        </div>
+
+        <div class="image-item">
+            <h3>Organic Cotton Produce Bags</h3>
+            <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" 
+                 alt="Cotton mesh bags" class="image-preview">
+            <div class="filename">organic-cotton-bags.jpg</div>
+            <div class="description">Organic cotton mesh produce bags</div>
+        </div>
+
+        <div class="image-item">
+            <h3>Morning Skincare Products</h3>
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" 
+                 alt="Morning skincare routine" class="image-preview">
+            <div class="filename">morning-skincare.jpg</div>
+            <div class="description">Morning skincare routine products</div>
+        </div>
+
+        <div class="image-item">
+            <h3>Evening Skincare Products</h3>
+            <img src="https://images.unsplash.com/photo-1570194065650-d99fb4bedf0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" 
+                 alt="Evening skincare products" class="image-preview">
+            <div class="filename">evening-skincare.jpg</div>
+            <div class="description">Evening skincare routine with serums</div>
+        </div>
+
+        <div class="image-item">
+            <h3>Face Masks & Treatments</h3>
+            <img src="https://images.unsplash.com/photo-1556228578-dd339d3a3ea0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" 
+                 alt="Face masks" class="image-preview">
+            <div class="filename">face-masks.jpg</div>
+            <div class="description">Natural face masks and treatments</div>
+        </div>
+    </div>
+
+    <div class="image-section">
+        <h2>🍽️ Kitchen & Home Products</h2>
+        
+        <div class="image-item">
+            <h3>Bamboo Kitchen Utensil Set</h3>
+            <img src="https://images.unsplash.com/photo-1556909235-4b12abc3d264?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" 
+                 alt="Bamboo kitchen utensils" class="image-preview">
+            <div class="filename">bamboo-kitchen-set.jpg</div>
+            <div class="description">Complete bamboo kitchen utensil set</div>
+        </div>
+
+        <div class="image-item">
+            <h3>Glass Food Storage Containers</h3>
+            <img src="https://images.unsplash.com/photo-1558618666-fbd1b3b3e13a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" 
+                 alt="Glass containers" class="image-preview">
+            <div class="filename">glass-food-containers.jpg</div>
+            <div class="description">Borosilicate glass storage containers</div>
+        </div>
+
+        <div class="image-item">
+            <h3>Organic Cotton Towels</h3>
+            <img src="https://images.unsplash.com/photo-1564694202779-bc908c327862?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" 
+                 alt="Cotton towels" class="image-preview">
+            <div class="filename">organic-cotton-towels.jpg</div>
+            <div class="description">GOTS certified organic cotton towels</div>
+        </div>
+    </div>
+
+    <div class="image-section">
+        <h2>👥 Team & Author Images</h2>
+        
+        <div class="image-item">
+            <h3>Sarah Green - Founder</h3>
+            <img src="https://images.unsplash.com/photo-1494790108755-2616c55b0c34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" 
+                 alt="Professional woman" class="image-preview">
+            <div class="filename">author-sarah.jpg</div>
+            <div class="filename">team-sarah.jpg</div>
+            <div class="description">Professional headshot for team member</div>
+        </div>
+
+        <div class="image-item">
+            <h3>Emma Chen - Beauty Expert</h3>
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" 
+                 alt="Professional woman" class="image-preview">
+            <div class="filename">author-emma.jpg</div>
+            <div class="filename">team-emma.jpg</div>
+            <div class="description">Beauty expert team member</div>
+        </div>
+
+        <div class="image-item">
+            <h3>Maya Patel - Content Manager</h3>
+            <img src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" 
+                 alt="Professional woman" class="image-preview">
+            <div class="filename">author-maya.jpg</div>
+            <div class="filename">team-maya.jpg</div>
+            <div class="description">Content and community manager</div>
+        </div>
+
+        <div class="image-item">
+            <h3>Alex Rodriguez - Researcher</h3>
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" 
+                 alt="Professional man" class="image-preview">
+            <div class="filename">team-alex.jpg</div>
+            <div class="description">Sustainability researcher</div>
+        </div>
+    </div>
+
+    <div class="image-section">
+        <h2>📱 Additional Product Images</h2>
+        
+        <div class="image-item">
+            <h3>Organic Skincare Set</h3>
+            <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" 
+                 alt="Skincare set" class="image-preview">
+            <div class="filename">organic-skincare-set.jpg</div>
+            <div class="description">Complete organic skincare routine set</div>
+        </div>
+
+        <div class="image-item">
+            <h3>Bamboo Toothbrush Family Pack</h3>
+            <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" 
+                 alt="Multiple toothbrushes" class="image-preview">
+            <div class="filename">bamboo-toothbrush-family.jpg</div>
+            <div class="description">Family pack of bamboo toothbrushes</div>
+        </div>
+
+        <div class="image-item">
+            <h3>Natural Deodorant</h3>
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" 
+                 alt="Natural deodorant" class="image-preview">
+            <div class="filename">natural-deodorant.jpg</div>
+            <div class="description">Aluminum-free natural deodorant</div>
+        </div>
+
+        <div class="image-item">
+            <h3>Organic Cotton T-Shirt</h3>
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" 
+                 alt="Organic t-shirt" class="image-preview">
+            <div class="filename">organic-cotton-tshirt.jpg</div>
+            <div class="description">GOTS certified organic cotton t-shirt</div>
+        </div>
+
+        <div class="image-item">
+            <h3>Hemp Canvas Tote Bag</h3>
+            <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" 
+                 alt="Hemp tote bag" class="image-preview">
+            <div class="filename">hemp-canvas-bag.jpg</div>
+            <div class="description">Durable hemp canvas tote bag</div>
+        </div>
+
+        <div class="image-item">
+            <h3>Stainless Steel Water Bottle</h3>
+            <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" 
+                 alt="Water bottle" class="image-preview">
+            <div class="filename">stainless-steel-bottle.jpg</div>
+            <div class="description">Insulated stainless steel water bottle</div>
+        </div>
+
+        <div class="image-item">
+            <h3>Solar Power Bank</h3>
+            <img src="https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" 
+                 alt="Solar charger" class="image-preview">
+            <div class="filename">solar-power-bank.jpg</div>
+            <div class="description">Portable solar power bank charger</div>
+        </div>
+    </div>
+
+    <div class="image-section">
+        <h2>📚 Blog Content Images</h2>
+        
+        <div class="image-item">
+            <h3>Eco Products Collection</h3>
+            <img src="https://images.unsplash.com/photo-1556909114-4ba79ba3c5b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" 
+                 alt="Eco products" class="image-preview">
+            <div class="filename">eco-products.jpg</div>
+            <div class="description">Various eco-friendly products for blog</div>
+        </div>
+
+        <div class="image-item">
+            <h3>Organic Skincare Products</h3>
+            <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" 
+                 alt="Skincare products" class="image-preview">
+            <div class="filename">organic-skincare.jpg</div>
+            <div class="description">Natural skincare products collection</div>
+        </div>
+
+        <div class="image-item">
+            <h3>Sustainable Fashion Items</h3>
+            <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" 
+                 alt="Sustainable fashion" class="image-preview">
+            <div class="filename">sustainable-fashion.jpg</div>
+            <div class="description">Sustainable and ethical fashion pieces</div>
+        </div>
+
+        <div class="image-item">
+            <h3>Zero Waste Kitchen</h3>
+            <img src="https://images.unsplash.com/photo-1556909235-f126edbfced0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" 
+                 alt="Zero waste kitchen" class="image-preview">
+            <div class="filename">zero-waste-kitchen.jpg</div>
+            <div class="description">Zero waste kitchen setup</div>
+        </div>
+
+        <div class="image-item">
+            <h3>Bamboo Products Collection</h3>
+            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" 
+                 alt="Bamboo products" class="image-preview">
+            <div class="filename">bamboo-products.jpg</div>
+            <div class="description">Various bamboo household products</div>
+        </div>
+
+        <div class="image-item">
+            <h3>Indoor Air-Purifying Plants</h3>
+            <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" 
+                 alt="Indoor plants" class="image-preview">
+            <div class="filename">indoor-plants.jpg</div>
+            <div class="description">Collection of air-purifying indoor plants</div>
+        </div>
+    </div>
+
+    <div class="image-section">
+        <h2>🏷️ Fashion Brand Images</h2>
+        
+        <div class="image-item">
+            <h3>Patagonia Style Outdoor Wear</h3>
+            <img src="https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" 
+                 alt="Outdoor clothing" class="image-preview">
+            <div class="filename">patagonia-brand.jpg</div>
+            <div class="description">Sustainable outdoor wear brand style</div>
+        </div>
+
+        <div class="image-item">
+            <h3>Everlane Style Basic Clothing</h3>
+            <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" 
+                 alt="Basic clothing" class="image-preview">
+            <div class="filename">everlane-brand.jpg</div>
+            <div class="description">Modern basics and transparent fashion</div>
+        </div>
+
+        <div class="image-item">
+            <h3>Reformation Style Feminine Wear</h3>
+            <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" 
+                 alt="Feminine dresses" class="image-preview">
+            <div class="filename">reformation-brand.jpg</div>
+            <div class="description">Sustainable feminine fashion pieces</div>
+        </div>
+    </div>
+
+    <script>
+        // Add click to download functionality
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('click', function() {
+                const link = document.createElement('a');
+                link.href = this.src;
+                link.download = img.nextElementSibling.textContent || 'image.jpg';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            });
+        });
+
+        console.log('Click on any image to download it automatically!');
+        
+        // Add instructions
+        window.addEventListener('load', function() {
+            console.log('All images loaded! Right-click and "Save As" or click to download.');
+        });
+    </script>
+</body>
+</html>

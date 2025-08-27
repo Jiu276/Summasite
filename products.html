@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Friendly Products - Summasite</title>
+    <meta name="description" content="Discover our curated collection of sustainable, eco-friendly products for every aspect of your green lifestyle.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <div class="logo"></div>
+                    <span class="brand-name">Summasite</span>
+                </div>
+                <div class="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                    <a href="products.html" class="nav-link active">Products</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="Search products..." class="search-input" id="productSearch">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="products-main">
+        <div class="container">
+            <div class="products-header">
+                <h1 class="products-title">Eco-Friendly Products</h1>
+                <p class="products-subtitle">Discover our carefully curated collection of sustainable products that help you live more consciously without compromising on quality or style.</p>
+            </div>
+
+            <div class="products-filters">
+                <div class="filter-categories">
+                    <button class="filter-btn active" data-category="all">All Products</button>
+                    <button class="filter-btn" data-category="home">Home & Kitchen</button>
+                    <button class="filter-btn" data-category="beauty">Beauty & Personal Care</button>
+                    <button class="filter-btn" data-category="fashion">Fashion & Accessories</button>
+                    <button class="filter-btn" data-category="outdoor">Outdoor & Travel</button>
+                </div>
+                <div class="sort-options">
+                    <select class="sort-select">
+                        <option value="featured">Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="rating">Highest Rated</option>
+                        <option value="newest">Newest</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="products-content">
+                <div class="products-grid" id="productsGrid">
+                    <!-- Home & Kitchen Products -->
+                    <div class="product-card" data-category="home">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Bamboo kitchen utensil set">
+                            <div class="product-badge">Bestseller</div>
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product="bamboo-kitchen-set">Quick View</button>
+                                <a href="product-bamboo-kitchen.html" class="view-details-btn">View Details</a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Bamboo Kitchen Utensil Set</h3>
+                            <p class="product-description">Complete 6-piece bamboo cooking utensil set with holder. Sustainable, durable, and naturally antibacterial.</p>
+                            <div class="product-rating">
+                                <div class="stars">★★★★★</div>
+                                <span class="rating-count">(127 reviews)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$34.99</span>
+                                <span class="original-price">$49.99</span>
+                                <span class="discount">30% off</span>
+                            </div>
+                            <div class="product-features">
+                                <span class="feature-tag">Biodegradable</span>
+                                <span class="feature-tag">Non-toxic</span>
+                                <span class="feature-tag">Dishwasher Safe</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="home">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Glass food storage containers">
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product="glass-containers">Quick View</button>
+                                <a href="product-glass-containers.html" class="view-details-btn">View Details</a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Borosilicate Glass Storage Set</h3>
+                            <p class="product-description">Premium glass food storage containers with airtight bamboo lids. Perfect for meal prep and food storage.</p>
+                            <div class="product-rating">
+                                <div class="stars">★★★★★</div>
+                                <span class="rating-count">(89 reviews)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$52.99</span>
+                            </div>
+                            <div class="product-features">
+                                <span class="feature-tag">BPA-free</span>
+                                <span class="feature-tag">Microwave Safe</span>
+                                <span class="feature-tag">Leak-proof</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="home">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Organic cotton towel set">
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product="cotton-towels">Quick View</button>
+                                <a href="product-cotton-towels.html" class="view-details-btn">View Details</a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">GOTS Certified Organic Cotton Towels</h3>
+                            <p class="product-description">Ultra-soft organic cotton bath towel set. GOTS certified, naturally dyed, and incredibly absorbent.</p>
+                            <div class="product-rating">
+                                <div class="stars">★★★★☆</div>
+                                <span class="rating-count">(64 reviews)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$78.99</span>
+                            </div>
+                            <div class="product-features">
+                                <span class="feature-tag">GOTS Certified</span>
+                                <span class="feature-tag">Chemical-free</span>
+                                <span class="feature-tag">Quick-dry</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Beauty & Personal Care Products -->
+                    <div class="product-card" data-category="beauty">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Organic skincare routine set">
+                            <div class="product-badge">Editor's Choice</div>
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product="skincare-set">Quick View</button>
+                                <a href="product-skincare-set.html" class="view-details-btn">View Details</a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Complete Organic Skincare Routine</h3>
+                            <p class="product-description">4-step organic skincare system with cleanser, toner, serum, and moisturizer. Suitable for all skin types.</p>
+                            <div class="product-rating">
+                                <div class="stars">★★★★★</div>
+                                <span class="rating-count">(203 reviews)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$89.99</span>
+                                <span class="original-price">$120.00</span>
+                                <span class="discount">25% off</span>
+                            </div>
+                            <div class="product-features">
+                                <span class="feature-tag">USDA Organic</span>
+                                <span class="feature-tag">Cruelty-free</span>
+                                <span class="feature-tag">Vegan</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="beauty">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Bamboo toothbrush family pack">
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product="bamboo-toothbrush">Quick View</button>
+                                <a href="product-bamboo-toothbrush.html" class="view-details-btn">View Details</a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Bamboo Toothbrush Family Pack</h3>
+                            <p class="product-description">Set of 4 bamboo toothbrushes with soft bristles. Each handle engraved with unique designs for easy identification.</p>
+                            <div class="product-rating">
+                                <div class="stars">★★★★★</div>
+                                <span class="rating-count">(156 reviews)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$12.99</span>
+                            </div>
+                            <div class="product-features">
+                                <span class="feature-tag">100% Biodegradable</span>
+                                <span class="feature-tag">Antimicrobial</span>
+                                <span class="feature-tag">Soft Bristles</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="beauty">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1570194065650-d99fb4bedf0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Natural aluminum-free deodorant">
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product="natural-deodorant">Quick View</button>
+                                <a href="product-natural-deodorant.html" class="view-details-btn">View Details</a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Aluminum-Free Natural Deodorant</h3>
+                            <p class="product-description">Long-lasting natural deodorant with organic coconut oil, shea butter, and essential oils. Available in 4 scents.</p>
+                            <div class="product-rating">
+                                <div class="stars">★★★★☆</div>
+                                <span class="rating-count">(92 reviews)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$16.99</span>
+                            </div>
+                            <div class="product-features">
+                                <span class="feature-tag">Aluminum-free</span>
+                                <span class="feature-tag">24hr Protection</span>
+                                <span class="feature-tag">Sensitive Skin</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fashion & Accessories Products -->
+                    <div class="product-card" data-category="fashion">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Organic cotton t-shirt">
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product="organic-tshirt">Quick View</button>
+                                <a href="product-organic-tshirt.html" class="view-details-btn">View Details</a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Organic Cotton Basic Tee</h3>
+                            <p class="product-description">Super soft organic cotton t-shirt in classic fit. Made from 100% GOTS-certified organic cotton in 8 colors.</p>
+                            <div class="product-rating">
+                                <div class="stars">★★★★★</div>
+                                <span class="rating-count">(178 reviews)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$28.99</span>
+                            </div>
+                            <div class="product-features">
+                                <span class="feature-tag">GOTS Certified</span>
+                                <span class="feature-tag">Fair Trade</span>
+                                <span class="feature-tag">Pre-shrunk</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="fashion">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Hemp canvas tote bag">
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product="hemp-bag">Quick View</button>
+                                <a href="product-hemp-bag.html" class="view-details-btn">View Details</a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Hemp Canvas Tote Bag</h3>
+                            <p class="product-description">Durable hemp canvas tote with reinforced handles. Perfect for shopping, work, or everyday use. Machine washable.</p>
+                            <div class="product-rating">
+                                <div class="stars">★★★★☆</div>
+                                <span class="rating-count">(85 reviews)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$24.99</span>
+                            </div>
+                            <div class="product-features">
+                                <span class="feature-tag">Durable Hemp</span>
+                                <span class="feature-tag">Machine Washable</span>
+                                <span class="feature-tag">Large Capacity</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Outdoor & Travel Products -->
+                    <div class="product-card" data-category="outdoor">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Insulated stainless steel water bottle">
+                            <div class="product-badge">New</div>
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product="water-bottle">Quick View</button>
+                                <a href="product-water-bottle.html" class="view-details-btn">View Details</a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Insulated Stainless Steel Water Bottle</h3>
+                            <p class="product-description">Double-wall vacuum insulated bottle keeps drinks cold for 24hrs or hot for 12hrs. BPA-free with leak-proof cap.</p>
+                            <div class="product-rating">
+                                <div class="stars">★★★★★</div>
+                                <span class="rating-count">(234 reviews)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$24.95</span>
+                            </div>
+                            <div class="product-features">
+                                <span class="feature-tag">24hr Cold</span>
+                                <span class="feature-tag">BPA-free</span>
+                                <span class="feature-tag">Leak-proof</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="outdoor">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Solar power bank charger">
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product="solar-charger">Quick View</button>
+                                <a href="product-solar-charger.html" class="view-details-btn">View Details</a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Solar Power Bank 20,000mAh</h3>
+                            <p class="product-description">Portable solar charger with dual USB ports and LED flashlight. Perfect for camping, hiking, and emergency situations.</p>
+                            <div class="product-rating">
+                                <div class="stars">★★★★☆</div>
+                                <span class="rating-count">(67 reviews)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$45.99</span>
+                                <span class="original-price">$59.99</span>
+                                <span class="discount">23% off</span>
+                            </div>
+                            <div class="product-features">
+                                <span class="feature-tag">Solar Charging</span>
+                                <span class="feature-tag">Waterproof</span>
+                                <span class="feature-tag">Fast Charge</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products-pagination">
+                    <button class="pagination-btn prev-btn" disabled>
+                        <i class="fas fa-chevron-left"></i>
+                        Previous
+                    </button>
+                    <div class="pagination-numbers">
+                        <button class="pagination-number active">1</button>
+                        <button class="pagination-number">2</button>
+                        <button class="pagination-number">3</button>
+                        <span class="pagination-ellipsis">...</span>
+                        <button class="pagination-number">8</button>
+                    </div>
+                    <button class="pagination-btn next-btn">
+                        Next
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Quick View Modal -->
+    <div class="modal-overlay" id="quickViewModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-product" id="modalProduct">
+                <!-- Product details will be loaded here dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <aside class="sidebar">
+        <div class="widget">
+            <h3 class="widget-title">Filter by Price</h3>
+            <div class="price-filter">
+                <div class="price-range">
+                    <input type="range" id="priceRange" min="0" max="200" value="200" class="range-slider">
+                    <div class="price-values">
+                        <span>$0</span>
+                        <span id="maxPrice">$200</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="widget">
+            <h3 class="widget-title">Certifications</h3>
+            <div class="certification-filters">
+                <label class="filter-checkbox">
+                    <input type="checkbox" value="organic">
+                    <span class="checkmark"></span>
+                    USDA Organic
+                </label>
+                <label class="filter-checkbox">
+                    <input type="checkbox" value="gots">
+                    <span class="checkmark"></span>
+                    GOTS Certified
+                </label>
+                <label class="filter-checkbox">
+                    <input type="checkbox" value="fairtrade">
+                    <span class="checkmark"></span>
+                    Fair Trade
+                </label>
+                <label class="filter-checkbox">
+                    <input type="checkbox" value="cruelty-free">
+                    <span class="checkmark"></span>
+                    Cruelty Free
+                </label>
+                <label class="filter-checkbox">
+                    <input type="checkbox" value="vegan">
+                    <span class="checkmark"></span>
+                    Vegan
+                </label>
+            </div>
+        </div>
+
+        <div class="widget">
+            <h3 class="widget-title">Customer Rating</h3>
+            <div class="rating-filters">
+                <label class="filter-checkbox">
+                    <input type="radio" name="rating" value="5">
+                    <span class="checkmark"></span>
+                    <div class="stars">★★★★★</div> & Up
+                </label>
+                <label class="filter-checkbox">
+                    <input type="radio" name="rating" value="4">
+                    <span class="checkmark"></span>
+                    <div class="stars">★★★★☆</div> & Up
+                </label>
+                <label class="filter-checkbox">
+                    <input type="radio" name="rating" value="3">
+                    <span class="checkmark"></span>
+                    <div class="stars">★★★☆☆</div> & Up
+                </label>
+            </div>
+        </div>
+
+        <div class="widget">
+            <h3 class="widget-title">Follow Us</h3>
+            <div class="social-links">
+                <a href="https://instagram.com/summasite" class="social-link instagram">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://facebook.com/summasite" class="social-link facebook">
+                    <i class="fab fa-facebook"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="https://twitter.com/summasite" class="social-link twitter">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                </a>
+                <a href="https://pinterest.com/summasite" class="social-link pinterest">
+                    <i class="fab fa-pinterest"></i>
+                    <span>Pinterest</span>
+                </a>
+            </div>
+        </div>
+    </aside>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <div class="footer-logo"></div>
+                        <span class="footer-brand-name">Summasite</span>
+                    </div>
+                    <p class="footer-description">Your trusted source for sustainable living advice, eco-friendly product reviews, and green lifestyle inspiration.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Green Living</a></li>
+                        <li><a href="#">Product Reviews</a></li>
+                        <li><a href="#">Natural Beauty</a></li>
+                        <li><a href="#">Sustainable Fashion</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Summasite. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html>

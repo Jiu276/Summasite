@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Summasite</title>
+    <meta name="description" content="Get in touch with the Summasite team. We'd love to hear from you about product suggestions, partnerships, or any questions about sustainable living.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <div class="logo"></div>
+                    <span class="brand-name">Summasite</span>
+                </div>
+                <div class="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                    <a href="products.html" class="nav-link">Products</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="Search..." class="search-input">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contact-main">
+        <section class="hero-section">
+            <div class="container">
+                <h1 class="hero-title">Get in Touch</h1>
+                <p class="hero-subtitle">We'd love to hear from you! Whether you have questions about sustainable living, product suggestions, or just want to say hello, we're here to help.</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-form-container">
+                        <h2>Send us a Message</h2>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a topic...</option>
+                                    <option value="product-suggestion">Product Suggestion</option>
+                                    <option value="review-request">Review Request</option>
+                                    <option value="partnership">Partnership Opportunity</option>
+                                    <option value="press-inquiry">Press Inquiry</option>
+                                    <option value="technical-support">Technical Support</option>
+                                    <option value="general-question">General Question</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="6" placeholder="Tell us more about your inquiry..." required></textarea>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <span class="checkmark"></span>
+                                    Subscribe to our newsletter for the latest eco-friendly tips and product reviews
+                                </label>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="privacy" name="privacy" required>
+                                    <span class="checkmark"></span>
+                                    I agree to the <a href="#" target="_blank">Privacy Policy</a> and <a href="#" target="_blank">Terms of Service</a> *
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn" id="submitBtn">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-loading" style="display: none;">
+                                    <i class="fas fa-spinner fa-spin"></i> Sending...
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info">
+                        <h2>Other Ways to Reach Us</h2>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-content">
+                                <h3>Email</h3>
+                                <p>For general inquiries and support</p>
+                                <a href="mailto:hello@summasite.com">hello@summasite.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="method-content">
+                                <h3>Partnerships</h3>
+                                <p>Collaboration and business opportunities</p>
+                                <a href="mailto:partnerships@summasite.com">partnerships@summasite.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-newspaper"></i>
+                            </div>
+                            <div class="method-content">
+                                <h3>Press & Media</h3>
+                                <p>Media inquiries and press requests</p>
+                                <a href="mailto:press@summasite.com">press@summasite.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="method-content">
+                                <h3>Response Time</h3>
+                                <p>We typically respond within</p>
+                                <span class="response-time">24-48 hours</span>
+                            </div>
+                        </div>
+                        
+                        <div class="social-media">
+                            <h3>Follow Us</h3>
+                            <div class="social-links">
+                                <a href="https://instagram.com/summasite" class="social-link instagram" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                    <span>Instagram</span>
+                                </a>
+                                <a href="https://facebook.com/summasite" class="social-link facebook" target="_blank">
+                                    <i class="fab fa-facebook"></i>
+                                    <span>Facebook</span>
+                                </a>
+                                <a href="https://twitter.com/summasite" class="social-link twitter" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                    <span>Twitter</span>
+                                </a>
+                                <a href="https://pinterest.com/summasite" class="social-link pinterest" target="_blank">
+                                    <i class="fab fa-pinterest"></i>
+                                    <span>Pinterest</span>
+                                </a>
+                                <a href="https://youtube.com/summasite" class="social-link youtube" target="_blank">
+                                    <i class="fab fa-youtube"></i>
+                                    <span>YouTube</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3 class="faq-question">
+                            How do you select products to review?
+                            <i class="fas fa-chevron-down"></i>
+                        </h3>
+                        <div class="faq-answer">
+                            <p>We select products based on several criteria: environmental certifications, ingredient transparency, company ethics, reader requests, and market availability. We prioritize products that offer genuine sustainable alternatives to conventional options.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">
+                            Do you accept products from companies for review?
+                            <i class="fas fa-chevron-down"></i>
+                        </h3>
+                        <div class="faq-answer">
+                            <p>Yes, we accept product samples from companies, but we maintain complete editorial independence. All products undergo our standard 30-day testing process, and we always disclose when products are provided for review. Our opinions remain honest and unbiased.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">
+                            Can I suggest a product for review?
+                            <i class="fas fa-chevron-down"></i>
+                        </h3>
+                        <div class="faq-answer">
+                            <p>Absolutely! We love hearing from our readers about products they'd like us to test. Use our contact form with the "Product Suggestion" subject, and tell us about the product and why you think it would be valuable for our community to know about.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">
+                            Do you offer consulting services?
+                            <i class="fas fa-chevron-down"></i>
+                        </h3>
+                        <div class="faq-answer">
+                            <p>We offer limited consulting services for sustainability-focused businesses and brands. Please contact us through our partnerships email to discuss your specific needs and how we might be able to help.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">
+                            How can I support Summasite?
+                            <i class="fas fa-chevron-down"></i>
+                        </h3>
+                        <div class="faq-answer">
+                            <p>The best way to support us is by engaging with our content, sharing our reviews with friends, and subscribing to our newsletter. We also participate in affiliate programs, so when you purchase products through our links, we earn a small commission at no cost to you.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">
+                            Can I write for Summasite?
+                            <i class="fas fa-chevron-down"></i>
+                        </h3>
+                        <div class="faq-answer">
+                            <p>We occasionally accept guest contributions from sustainability experts and passionate eco-advocates. Please send us your topic ideas, writing samples, and expertise background through our contact form for consideration.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <div class="footer-logo"></div>
+                        <span class="footer-brand-name">Summasite</span>
+                    </div>
+                    <p class="footer-description">Your trusted source for sustainable living advice, eco-friendly product reviews, and green lifestyle inspiration.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Green Living</a></li>
+                        <li><a href="#">Product Reviews</a></li>
+                        <li><a href="#">Natural Beauty</a></li>
+                        <li><a href="#">Sustainable Fashion</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Summasite. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
