@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step into Luxury: Vince Camuto's Designer Footwear Line - Summasite</title>
+    <meta name="description" content="Explore Vince Camuto's exceptional collection of designer footwear where Italian craftsmanship meets contemporary style for the modern fashion enthusiast.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/article.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Fix Navigation Overlap */
+        .post-main {
+            margin-top: 72px;
+            padding-top: 40px;
+        }
+
+        /* Enhanced Typography */
+        .post-title {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            background: linear-gradient(135deg, #d4a574 0%, #b8956a 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 0.8s ease;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Enhanced Meta Info */
+        .post-meta {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 15px 0;
+            border-top: 2px solid #f0f0f0;
+            border-bottom: 2px solid #f0f0f0;
+            margin: 1.5rem 0;
+        }
+
+        .post-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #666;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+
+        .post-meta-item:hover {
+            color: #d4a574;
+        }
+
+        .post-meta-item i {
+            color: #d4a574;
+        }
+
+        /* Enhanced Image Gallery */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 2rem 0;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(212, 165, 116, 0.3);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            color: white;
+            padding: 20px 15px 15px;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-caption {
+            transform: translateY(0);
+        }
+
+        /* Product Feature Cards */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin: 3rem 0;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, #fff 0%, #faf8f6 100%);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s ease;
+            border: 2px solid transparent;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(212, 165, 116, 0.2);
+            border-color: #d4a574;
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #d4a574 0%, #b8956a 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: white;
+        }
+
+        /* Blockquote Styling */
+        blockquote {
+            position: relative;
+            padding: 30px;
+            margin: 2rem 0;
+            background: linear-gradient(135deg, #faf8f6 0%, #fff 100%);
+            border-left: 4px solid #d4a574;
+            border-radius: 10px;
+            font-style: italic;
+            font-size: 1.2rem;
+            color: #555;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        blockquote::before {
+            content: '"';
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            font-size: 60px;
+            color: #d4a574;
+            opacity: 0.3;
+        }
+
+        /* Collection Showcase */
+        .collection-showcase {
+            background: linear-gradient(135deg, #faf8f6 0%, #fff 100%);
+            padding: 40px;
+            border-radius: 20px;
+            margin: 3rem 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .collection-title {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .collection-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+        }
+
+        .collection-item {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .collection-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(212, 165, 116, 0.2);
+        }
+
+        .collection-item h4 {
+            color: #d4a574;
+            margin-top: 15px;
+            font-size: 1.1rem;
+        }
+
+        /* Call to Action */
+        .cta-section {
+            background: linear-gradient(135deg, #d4a574 0%, #b8956a 100%);
+            color: white;
+            padding: 60px 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 3rem 0;
+            box-shadow: 0 20px 40px rgba(212, 165, 116, 0.3);
+        }
+
+        .cta-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .cta-description {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: white;
+            color: #d4a574;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            background: #f8f8f8;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .post-title {
+                font-size: 2rem;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-section {
+                padding: 40px 20px;
+            }
+
+            .cta-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <div class="logo"></div>
+                    <span class="brand-name">Summasite</span>
+                </div>
+                <div class="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                    <a href="products.html" class="nav-link">Products</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="Search..." class="search-input">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Article Content -->
+    <main class="post-main">
+        <div class="container">
+            <article class="post-content">
+                <header class="post-header">
+                    <h1 class="post-title">Step into Luxury: Vince Camuto's Designer Footwear Line</h1>
+                    <div class="post-meta">
+                        <div class="post-meta-item">
+                            <i class="far fa-calendar-alt"></i>
+                            <time datetime="2025-09-16">September 16, 2025</time>
+                        </div>
+                        <div class="post-meta-item">
+                            <i class="far fa-user"></i>
+                            <span>Fashion Editorial Team</span>
+                        </div>
+                        <div class="post-meta-item">
+                            <i class="far fa-clock"></i>
+                            <span>8 min read</span>
+                        </div>
+                        <div class="post-meta-item">
+                            <i class="far fa-folder"></i>
+                            <span>Designer Fashion</span>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="post-body">
+                    <!-- Hero Image -->
+                    <div class="featured-image">
+                        <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80" alt="Luxury designer heels collection" style="width: 100%; height: 500px; object-fit: cover; border-radius: 15px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);">
+                    </div>
+
+                    <!-- Introduction -->
+                    <section class="intro-section">
+                        <p class="lead">In the world of luxury footwear, few names resonate with as much style and sophistication as <a href="https://app.partnermatic.com/track/a9efC1RTGRkRjMkFFb6R7MnupsqWL0YLgcfqMz3kBu3k3OYxB9EWdMENyLbAz3LQk7cYkaP2ryBS3LP12yawuqrf036WSRV7inAZPUxOCA_c_c?url=http%3A%2F%2Fwww.vincecamuto.com%2F" target="_blank" style="color: #d4a574; font-weight: 600;">Vince Camuto</a>. Since its inception, the brand has been synonymous with accessible luxury, bringing runway-inspired designs to fashion-conscious individuals worldwide.</p>
+
+                        <p>What sets <a href="https://app.partnermatic.com/track/a9efC1RTGRkRjMkFFb6R7MnupsqWL0YLgcfqMz3kBu3k3OYxB9EWdMENyLbAz3LQk7cYkaP2ryBS3LP12yawuqrf036WSRV7inAZPUxOCA_c_c?url=http%3A%2F%2Fwww.vincecamuto.com%2F" target="_blank" style="color: #d4a574; font-weight: 600;">Vince Camuto</a> apart is their unwavering commitment to combining Italian craftsmanship with contemporary American style. Each pair tells a story of meticulous attention to detail, from the selection of premium materials to the final finishing touches that make every shoe a masterpiece.</p>
+                    </section>
+
+                    <!-- The Legacy of Excellence -->
+                    <section class="content-section">
+                        <h2>The Legacy of Excellence</h2>
+                        <p>Founded with a vision to democratize luxury footwear, <a href="https://app.partnermatic.com/track/a9efC1RTGRkRjMkFFb6R7MnupsqWL0YLgcfqMz3kBu3k3OYxB9EWdMENyLbAz3LQk7cYkaP2ryBS3LP12yawuqrf036WSRV7inAZPUxOCA_c_c?url=http%3A%2F%2Fwww.vincecamuto.com%2F" target="_blank" style="color: #d4a574; font-weight: 600;">Vince Camuto</a> has consistently delivered on its promise of accessible elegance. The brand's journey from a footwear specialist to a complete lifestyle brand demonstrates their deep understanding of modern fashion needs.</p>
+
+                        <blockquote>
+                            "Great design shouldn't be exclusive. It should be accessible to everyone who appreciates quality and style." - The Philosophy Behind <a href="https://app.partnermatic.com/track/a9efC1RTGRkRjMkFFb6R7MnupsqWL0YLgcfqMz3kBu3k3OYxB9EWdMENyLbAz3LQk7cYkaP2ryBS3LP12yawuqrf036WSRV7inAZPUxOCA_c_c?url=http%3A%2F%2Fwww.vincecamuto.com%2F" target="_blank" style="color: #d4a574; font-weight: 600;">Vince Camuto</a>
+                        </blockquote>
+
+                        <p>The brand's dedication to innovation while respecting traditional craftsmanship has resulted in collections that speak to diverse style sensibilities, from the boardroom professional to the weekend adventurer.</p>
+                    </section>
+
+                    <!-- Image Gallery -->
+                    <div class="image-gallery">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1596703263926-eb0762ee17e4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Classic pump heels">
+                            <div class="gallery-caption">Classic Pumps - Timeless Elegance</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1515347619252-60a4bf4fff4f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Ankle boots collection">
+                            <div class="gallery-caption">Ankle Boots - Modern Edge</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Casual sneakers">
+                            <div class="gallery-caption">Luxury Sneakers - Comfort Meets Style</div>
+                        </div>
+                    </div>
+
+                    <!-- Signature Collections -->
+                    <section class="content-section">
+                        <h2>Signature Collections That Define Modern Luxury</h2>
+
+                        <div class="collection-showcase">
+                            <h3 class="collection-title">Current Season Highlights</h3>
+                            <div class="collection-grid">
+                                <div class="collection-item">
+                                    <i class="fas fa-high-heel" style="font-size: 3rem; color: #d4a574;"></i>
+                                    <h4>The Imagine Collection</h4>
+                                    <p>Strappy sandals that embody feminine grace</p>
+                                </div>
+                                <div class="collection-item">
+                                    <i class="fas fa-shoe-prints" style="font-size: 3rem; color: #d4a574;"></i>
+                                    <h4>The Gianni Collection</h4>
+                                    <p>Bold boots for the modern trendsetter</p>
+                                </div>
+                                <div class="collection-item">
+                                    <i class="fas fa-walking" style="font-size: 3rem; color: #d4a574;"></i>
+                                    <h4>The Prisilla Collection</h4>
+                                    <p>Versatile pumps for day-to-night wear</p>
+                                </div>
+                                <div class="collection-item">
+                                    <i class="fas fa-running" style="font-size: 3rem; color: #d4a574;"></i>
+                                    <h4>The Bestan Collection</h4>
+                                    <p>Contemporary sneakers with luxury details</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Craftsmanship and Quality -->
+                    <section class="content-section">
+                        <h2>Craftsmanship That Speaks Volumes</h2>
+                        <p>Every pair of <a href="https://app.partnermatic.com/track/a9efC1RTGRkRjMkFFb6R7MnupsqWL0YLgcfqMz3kBu3k3OYxB9EWdMENyLbAz3LQk7cYkaP2ryBS3LP12yawuqrf036WSRV7inAZPUxOCA_c_c?url=http%3A%2F%2Fwww.vincecamuto.com%2F" target="_blank" style="color: #d4a574; font-weight: 600;">Vince Camuto</a> shoes undergoes rigorous quality control to ensure perfection. The brand sources the finest leathers from Italy, combines them with innovative comfort technologies, and employs skilled artisans who bring decades of experience to their craft.</p>
+
+                        <div class="feature-grid">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-gem"></i>
+                                </div>
+                                <h3>Premium Materials</h3>
+                                <p>Only the finest Italian leathers and materials are selected, ensuring durability and luxurious feel with every step.</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-ruler-combined"></i>
+                                </div>
+                                <h3>Precision Engineering</h3>
+                                <p>Each design is meticulously crafted with precise measurements and ergonomic considerations for optimal comfort.</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-palette"></i>
+                                </div>
+                                <h3>Trend-Forward Design</h3>
+                                <p>Our design team constantly researches global fashion trends to create collections that are both current and timeless.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Style Guide -->
+                    <section class="content-section">
+                        <h2>Styling Your Vince Camuto Footwear</h2>
+                        <p>The versatility of <a href="https://app.partnermatic.com/track/a9efC1RTGRkRjMkFFb6R7MnupsqWL0YLgcfqMz3kBu3k3OYxB9EWdMENyLbAz3LQk7cYkaP2ryBS3LP12yawuqrf036WSRV7inAZPUxOCA_c_c?url=http%3A%2F%2Fwww.vincecamuto.com%2F" target="_blank" style="color: #d4a574; font-weight: 600;">Vince Camuto</a> footwear makes them perfect for various occasions. Here's how to make the most of your collection:</p>
+
+                        <ul style="line-height: 2; font-size: 1.1rem;">
+                            <li><strong>For the Office:</strong> Pair classic pumps with tailored suits or midi skirts for a professional yet stylish look</li>
+                            <li><strong>Weekend Casual:</strong> Style ankle boots with jeans and oversized sweaters for effortless weekend chic</li>
+                            <li><strong>Evening Elegance:</strong> Choose strappy sandals with embellishments to complement your cocktail dresses</li>
+                            <li><strong>Transitional Style:</strong> Opt for loafers or low-heeled mules that work seamlessly from day to night</li>
+                            <li><strong>Statement Making:</strong> Select bold colors or unique textures to add personality to minimalist outfits</li>
+                        </ul>
+                    </section>
+
+                    <!-- Sustainability Initiatives -->
+                    <section class="content-section">
+                        <h2>Commitment to Responsible Fashion</h2>
+                        <p>In today's conscious fashion landscape, <a href="https://app.partnermatic.com/track/a9efC1RTGRkRjMkFFb6R7MnupsqWL0YLgcfqMz3kBu3k3OYxB9EWdMENyLbAz3LQk7cYkaP2ryBS3LP12yawuqrf036WSRV7inAZPUxOCA_c_c?url=http%3A%2F%2Fwww.vincecamuto.com%2F" target="_blank" style="color: #d4a574; font-weight: 600;">Vince Camuto</a> recognizes the importance of sustainable practices. The brand has implemented several initiatives to reduce its environmental footprint while maintaining the quality and luxury their customers expect.</p>
+
+                        <p>From sourcing eco-friendly materials to implementing energy-efficient manufacturing processes, every step is taken with consideration for both style and sustainability. This commitment extends to packaging, where recycled and recyclable materials are increasingly used.</p>
+                    </section>
+
+                    <!-- Customer Experience -->
+                    <section class="content-section">
+                        <h2>The Vince Camuto Experience</h2>
+                        <p>Shopping for <a href="https://app.partnermatic.com/track/a9efC1RTGRkRjMkFFb6R7MnupsqWL0YLgcfqMz3kBu3k3OYxB9EWdMENyLbAz3LQk7cYkaP2ryBS3LP12yawuqrf036WSRV7inAZPUxOCA_c_c?url=http%3A%2F%2Fwww.vincecamuto.com%2F" target="_blank" style="color: #d4a574; font-weight: 600;">Vince Camuto</a> footwear is more than a purchase—it's an experience. Whether browsing online or visiting boutiques, customers are treated to:</p>
+
+                        <div class="feature-grid">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-concierge-bell"></i>
+                                </div>
+                                <h3>Personal Styling Services</h3>
+                                <p>Expert stylists help you find the perfect pairs to complement your wardrobe and lifestyle.</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-shipping-fast"></i>
+                                </div>
+                                <h3>Seamless Shopping</h3>
+                                <p>Easy online ordering with fast shipping and hassle-free returns for the perfect fit.</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-gift"></i>
+                                </div>
+                                <h3>Exclusive Rewards</h3>
+                                <p>Join the loyalty program for early access to sales, exclusive collections, and special events.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Call to Action -->
+                    <div class="cta-section">
+                        <h2 class="cta-title">Discover Your Perfect Pair</h2>
+                        <p class="cta-description">Experience the luxury of Vince Camuto footwear and elevate your style to new heights.</p>
+                        <a href="https://app.partnermatic.com/track/a9efC1RTGRkRjMkFFb6R7MnupsqWL0YLgcfqMz3kBu3k3OYxB9EWdMENyLbAz3LQk7cYkaP2ryBS3LP12yawuqrf036WSRV7inAZPUxOCA_c_c?url=http%3A%2F%2Fwww.vincecamuto.com%2F" target="_blank" class="cta-button">Shop the Collection</a>
+                    </div>
+
+                    <!-- Conclusion -->
+                    <section class="content-section">
+                        <h2>Walking Forward with Confidence</h2>
+                        <p><a href="https://app.partnermatic.com/track/a9efC1RTGRkRjMkFFb6R7MnupsqWL0YLgcfqMz3kBu3k3OYxB9EWdMENyLbAz3LQk7cYkaP2ryBS3LP12yawuqrf036WSRV7inAZPUxOCA_c_c?url=http%3A%2F%2Fwww.vincecamuto.com%2F" target="_blank" style="color: #d4a574; font-weight: 600;">Vince Camuto</a> continues to redefine what luxury footwear means in the modern world. By combining timeless elegance with contemporary innovation, the brand ensures that every step you take is a statement of style and sophistication.</p>
+
+                        <p>Whether you're building your professional wardrobe, updating your casual collection, or searching for that perfect special occasion pair, <a href="https://app.partnermatic.com/track/a9efC1RTGRkRjMkFFb6R7MnupsqWL0YLgcfqMz3kBu3k3OYxB9EWdMENyLbAz3LQk7cYkaP2ryBS3LP12yawuqrf036WSRV7inAZPUxOCA_c_c?url=http%3A%2F%2Fwww.vincecamuto.com%2F" target="_blank" style="color: #d4a574; font-weight: 600;">Vince Camuto</a> offers footwear that transcends trends while celebrating individual style. Step into the world of accessible luxury and discover why discerning fashion enthusiasts worldwide choose <a href="https://app.partnermatic.com/track/a9efC1RTGRkRjMkFFb6R7MnupsqWL0YLgcfqMz3kBu3k3OYxB9EWdMENyLbAz3LQk7cYkaP2ryBS3LP12yawuqrf036WSRV7inAZPUxOCA_c_c?url=http%3A%2F%2Fwww.vincecamuto.com%2F" target="_blank" style="color: #d4a574; font-weight: 600;">Vince Camuto</a> as their footwear destination of choice.</p>
+                    </section>
+
+                    <!-- Related Articles -->
+                    <section class="related-posts">
+                        <h3>You Might Also Like</h3>
+                        <div class="related-grid">
+                            <article class="related-card">
+                                <a href="post-sustainable-fashion.html">
+                                    <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Sustainable Fashion">
+                                    <h4>The Rise of Sustainable Fashion</h4>
+                                    <p>Exploring eco-conscious style choices for the modern wardrobe.</p>
+                                </a>
+                            </article>
+                            <article class="related-card">
+                                <a href="post-eby-comfort-wear.html">
+                                    <img src="https://images.unsplash.com/photo-1564859228273-274232fdb516?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Comfort Wear">
+                                    <h4>Shop Comfort Wear at Eby</h4>
+                                    <p>Discover the perfect blend of comfort and style.</p>
+                                </a>
+                            </article>
+                            <article class="related-card">
+                                <a href="post-beach-riot-lifestyle.html">
+                                    <img src="https://images.unsplash.com/photo-1502716119720-b23a93e5fe1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Beach Lifestyle">
+                                    <h4>Beach Riot Lifestyle Collection</h4>
+                                    <p>Embrace the carefree beach lifestyle with trendy swimwear.</p>
+                                </a>
+                            </article>
+                        </div>
+                    </section>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Summasite</h3>
+                    <p>Your trusted source for sustainable living tips, eco-friendly product reviews, and green lifestyle inspiration.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Fashion & Style</a></li>
+                        <li><a href="#">Beauty & Wellness</a></li>
+                        <li><a href="#">Home & Living</a></li>
+                        <li><a href="#">Travel & Lifestyle</a></li>
+                        <li><a href="#">Eco Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get the latest updates on sustainable living and exclusive offers!</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Summasite. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
