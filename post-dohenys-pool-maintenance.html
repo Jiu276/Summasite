@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Everything for Your Pool Maintenance at Doheny's - Summasite</title>
+    <meta name="description" content="Discover Doheny's comprehensive selection of pool maintenance equipment, chemicals, and supplies for crystal-clear water all season long.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/article.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Article Layout Structure */
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f8f9fa;
+        }
+
+        .post-main {
+            max-width: 900px;
+            margin: 80px auto 0;
+            padding: 0 20px;
+        }
+
+        .post-article {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+
+        .post-header {
+            padding: 40px 40px 20px;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        /* Enhanced Typography */
+        .post-title {
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            line-height: 1.3;
+            background: linear-gradient(135deg, #00a8cc 0%, #0077be 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 0 0 1.5rem 0;
+            font-weight: 700;
+            animation: fadeInUp 0.8s ease;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Enhanced Meta Info */
+        .post-meta {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 15px 0;
+            margin: 0;
+            animation: fadeIn 1s ease 0.3s both;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        .meta-item i {
+            color: #00a8cc;
+        }
+
+        /* Enhanced Feature Image */
+        .post-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            display: block;
+            animation: slideIn 0.8s ease;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Enhanced Content Styling */
+        .post-content {
+            padding: 40px;
+            animation: fadeIn 1s ease 0.5s both;
+        }
+
+        .post-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+
+        .post-content h2 {
+            color: #00a8cc;
+            font-size: 2rem;
+            margin: 2.5rem 0 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #e3f4f9;
+            position: relative;
+        }
+
+        .post-content h3 {
+            color: #0077be;
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem;
+        }
+
+        /* Key Features List */
+        .features-list {
+            background: linear-gradient(135deg, #e3f4f9 0%, #f0f9ff 100%);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            box-shadow: 0 5px 15px rgba(0,168,204,0.1);
+        }
+
+        .features-list ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .features-list li {
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(0,168,204,0.1);
+            display: flex;
+            align-items: start;
+            gap: 15px;
+        }
+
+        .features-list li:last-child {
+            border-bottom: none;
+        }
+
+        .features-list li:before {
+            content: "✓";
+            color: #00a8cc;
+            font-weight: bold;
+            font-size: 1.3rem;
+            flex-shrink: 0;
+        }
+
+        /* Info Cards */
+        .info-card {
+            background: white;
+            border: 2px solid #e3f4f9;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,168,204,0.15);
+        }
+
+        /* Quote Styling */
+        .quote-box {
+            background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);
+            border-left: 4px solid #00a8cc;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 12px 12px 0;
+            font-style: italic;
+            color: #555;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        /* CTA Button */
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #00a8cc 0%, #0077be 100%);
+            color: white;
+            padding: 15px 35px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 2rem 0;
+            box-shadow: 0 10px 20px rgba(0,168,204,0.3);
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(0,168,204,0.4);
+        }
+
+        /* Tips Section */
+        .tips-section {
+            background: #f9f9f9;
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .tips-section h3 {
+            color: #00a8cc;
+            margin-bottom: 1.5rem;
+        }
+
+        .tip-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            border-left: 3px solid #00a8cc;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+
+        /* Link Styles - Make links more prominent */
+        .post-content a {
+            color: #0077be;
+            font-weight: 600;
+            text-decoration: none;
+            background: linear-gradient(to bottom, transparent 60%, rgba(0, 168, 204, 0.3) 60%);
+            padding: 0 3px;
+            transition: all 0.3s ease;
+            position: relative;
+            border-radius: 3px;
+        }
+
+        .post-content a:hover {
+            background: linear-gradient(to bottom, transparent 30%, rgba(0, 168, 204, 0.5) 30%);
+            color: #00557a;
+            transform: translateY(-1px);
+        }
+
+        .post-content a::after {
+            content: '\2192';
+            font-size: 0.9em;
+            margin-left: 4px;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        .post-content a:hover::after {
+            transform: translateX(3px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .post-main {
+                margin-top: 60px;
+                padding: 0 15px;
+            }
+
+            .post-header {
+                padding: 30px 20px 15px;
+            }
+
+            .post-content {
+                padding: 20px;
+            }
+
+            .post-title {
+                font-size: 1.8rem;
+            }
+
+            .post-content h2 {
+                font-size: 1.5rem;
+            }
+
+            .post-content p {
+                font-size: 1rem;
+            }
+
+            .features-list {
+                padding: 1.5rem;
+            }
+
+            .post-image {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <i class="fas fa-cube"></i> Summasite
+            </a>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Article Content -->
+    <main class="post-main">
+        <article class="post-article">
+            <header class="post-header">
+                <h1 class="post-title">Find Everything for Your Pool Maintenance at Doheny's</h1>
+                <div class="post-meta">
+                    <span class="meta-item">
+                        <i class="far fa-calendar"></i> August 15, 2025
+                    </span>
+                    <span class="meta-item">
+                        <i class="far fa-clock"></i> 8 min read
+                    </span>
+                    <span class="meta-item">
+                        <i class="far fa-folder"></i> Pool Care
+                    </span>
+                    <span class="meta-item">
+                        <i class="far fa-user"></i> Summasite Team
+                    </span>
+                </div>
+            </header>
+
+            <img src="https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?w=1200" alt="Crystal clear swimming pool with maintenance equipment" class="post-image" loading="lazy">
+
+            <div class="post-content">
+                <p class="post-intro">
+                    When it comes to maintaining a pristine swimming pool, having the right supplies and equipment makes all the difference. <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=a39cSdAf3BrOAivwM1U2sG06XIjnXecffv8ZMDkcgcBOZLohAvbmzfq8OcyIwq8dXgI_c&new=https%3A%2F%2Fwww.doheny.com%2F" target="_blank" rel="noopener">Doheny's Pool Supplies</a> has been a trusted name in pool care for over 50 years, offering everything pool owners need to keep their aquatic oasis sparkling clean and inviting. From professional-grade chemicals to state-of-the-art equipment, <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=a39cSdAf3BrOAivwM1U2sG06XIjnXecffv8ZMDkcgcBOZLohAvbmzfq8OcyIwq8dXgI_c&new=https%3A%2F%2Fwww.doheny.com%2F" target="_blank" rel="noopener">Doheny's online store</a> provides comprehensive solutions throughout the swimming season.
+                </p>
+
+                <h2>Your Complete Pool Care Solution</h2>
+                <p>
+                    <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=a39cSdAf3BrOAivwM1U2sG06XIjnXecffv8ZMDkcgcBOZLohAvbmzfq8OcyIwq8dXgI_c&new=https%3A%2F%2Fwww.doheny.com%2F" target="_blank" rel="noopener">Doheny's Pool Supply Center</a> stands out as a comprehensive destination for pool maintenance, offering an extensive catalog that covers every aspect of pool care. From essential chemicals to advanced filtration systems, <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=a39cSdAf3BrOAivwM1U2sG06XIjnXecffv8ZMDkcgcBOZLohAvbmzfq8OcyIwq8dXgI_c&new=https%3A%2F%2Fwww.doheny.com%2F" target="_blank" rel="noopener">Doheny's</a> provides solutions for pools of all sizes and types. Whether you own a small above-ground pool or manage a large commercial facility, shopping at <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=a39cSdAf3BrOAivwM1U2sG06XIjnXecffv8ZMDkcgcBOZLohAvbmzfq8OcyIwq8dXgI_c&new=https%3A%2F%2Fwww.doheny.com%2F" target="_blank" rel="noopener">Doheny's official website</a> ensures you get genuine products with full warranties.
+                </p>
+
+                <div class="features-list">
+                    <h3>Essential Pool Maintenance Categories</h3>
+                    <ul>
+                        <li>Pool chemicals and water balancing products for optimal water quality</li>
+                        <li>Pumps, filters, and heaters for efficient pool operation</li>
+                        <li>Automatic pool cleaners and manual cleaning tools</li>
+                        <li>Pool covers and safety equipment for protection</li>
+                        <li>Replacement parts for all major pool equipment brands</li>
+                        <li>Pool accessories and recreational products</li>
+                    </ul>
+                </div>
+
+                <h2>Water Chemistry Made Simple</h2>
+                <p>
+                    Understanding and maintaining proper water chemistry is crucial for a healthy swimming environment. <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=a39cSdAf3BrOAivwM1U2sG06XIjnXecffv8ZMDkcgcBOZLohAvbmzfq8OcyIwq8dXgI_c&new=https%3A%2F%2Fwww.doheny.com%2F" target="_blank" rel="noopener">Doheny's Chemical Department</a> offers a complete range of pool chemicals, including chlorine, bromine, shock treatments, algaecides, and pH balancers. The expert team at <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=a39cSdAf3BrOAivwM1U2sG06XIjnXecffv8ZMDkcgcBOZLohAvbmzfq8OcyIwq8dXgI_c&new=https%3A%2F%2Fwww.doheny.com%2F" target="_blank" rel="noopener">Doheny's</a> provides guidance on proper chemical usage, helping pool owners maintain the perfect balance. Visit <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=a39cSdAf3BrOAivwM1U2sG06XIjnXecffv8ZMDkcgcBOZLohAvbmzfq8OcyIwq8dXgI_c&new=https%3A%2F%2Fwww.doheny.com%2F" target="_blank" rel="noopener">Doheny's online catalog</a> for safe and comfortable swimming solutions.
+                </p>
+
+                <div class="info-card">
+                    <h3>Professional-Grade Chemicals</h3>
+                    <p>
+                        The extensive chemical selection at <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=a39cSdAf3BrOAivwM1U2sG06XIjnXecffv8ZMDkcgcBOZLohAvbmzfq8OcyIwq8dXgI_c&new=https%3A%2F%2Fwww.doheny.com%2F" target="_blank" rel="noopener">Doheny's Pool Chemical Store</a> includes both traditional and alternative sanitization methods. Whether you prefer chlorine tablets, salt systems, or mineral sanitizers, <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=a39cSdAf3BrOAivwM1U2sG06XIjnXecffv8ZMDkcgcBOZLohAvbmzfq8OcyIwq8dXgI_c&new=https%3A%2F%2Fwww.doheny.com%2F" target="_blank" rel="noopener">Doheny's</a> offers high-quality products that keep your pool water crystal clear. Browse the complete collection at <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=a39cSdAf3BrOAivwM1U2sG06XIjnXecffv8ZMDkcgcBOZLohAvbmzfq8OcyIwq8dXgI_c&new=https%3A%2F%2Fwww.doheny.com%2F" target="_blank" rel="noopener">Doheny's website</a> for properly sanitized pool water.
+                    </p>
+                </div>
+
+                <h2>Advanced Filtration and Circulation Systems</h2>
+                <p>
+                    A pool's filtration system is its first line of defense against contaminants. <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=a39cSdAf3BrOAivwM1U2sG06XIjnXecffv8ZMDkcgcBOZLohAvbmzfq8OcyIwq8dXgI_c&new=https%3A%2F%2Fwww.doheny.com%2F" target="_blank" rel="noopener">Doheny's Equipment Division</a> carries top-brand pumps, filters, and motors designed for optimal performance and energy efficiency. From sand filters to cartridge and DE filters, <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=a39cSdAf3BrOAivwM1U2sG06XIjnXecffv8ZMDkcgcBOZLohAvbmzfq8OcyIwq8dXgI_c&new=https%3A%2F%2Fwww.doheny.com%2F" target="_blank" rel="noopener">Doheny's</a> offers solutions that match your pool's specific requirements. Explore the full range of maintenance equipment at <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=a39cSdAf3BrOAivwM1U2sG06XIjnXecffv8ZMDkcgcBOZLohAvbmzfq8OcyIwq8dXgI_c&new=https%3A%2F%2Fwww.doheny.com%2F" target="_blank" rel="noopener">Doheny's online marketplace</a>.
+                </p>
+
+                <div class="quote-box">
+                    "The right filtration system not only keeps your pool water clean but also reduces chemical usage and maintenance time. Our selection includes energy-efficient models that can significantly lower operating costs while maintaining superior water quality."
+                </div>
+
+                <h2>Automated Cleaning Solutions</h2>
+                <p>
+                    Modern pool maintenance has been revolutionized by automatic pool cleaners, and <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=a39cSdAf3BrOAivwM1U2sG06XIjnXecffv8ZMDkcgcBOZLohAvbmzfq8OcyIwq8dXgI_c&new=https%3A%2F%2Fwww.doheny.com%2F" target="_blank" rel="noopener">Doheny's Pool Cleaner Department</a> offers an impressive selection of robotic, suction, and pressure-side cleaners. These automated solutions from <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=a39cSdAf3BrOAivwM1U2sG06XIjnXecffv8ZMDkcgcBOZLohAvbmzfq8OcyIwq8dXgI_c&new=https%3A%2F%2Fwww.doheny.com%2F" target="_blank" rel="noopener">Doheny's</a> save time and effort while ensuring thorough cleaning of pool surfaces, walls, and floors. Find your perfect pool cleaner at <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=a39cSdAf3BrOAivwM1U2sG06XIjnXecffv8ZMDkcgcBOZLohAvbmzfq8OcyIwq8dXgI_c&new=https%3A%2F%2Fwww.doheny.com%2F" target="_blank" rel="noopener">Doheny's online shop</a>.
+                </p>
+
+                <div class="tips-section">
+                    <h3>Choosing the Right Pool Cleaner</h3>
+                    <div class="tip-item">
+                        <strong>Robotic Cleaners:</strong> Independent units with built-in filtration, ideal for pools with minimal debris and those seeking energy efficiency.
+                    </div>
+                    <div class="tip-item">
+                        <strong>Suction-Side Cleaners:</strong> Connect to your pool's filtration system, perfect for pools with fine debris and sand.
+                    </div>
+                    <div class="tip-item">
+                        <strong>Pressure-Side Cleaners:</strong> Use water pressure to collect debris, excellent for pools with large debris like leaves and acorns.
+                    </div>
+                </div>
+
+                <h2>Safety and Pool Covers</h2>
+                <p>
+                    Pool safety is paramount, especially for families with children and pets. <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=a39cSdAf3BrOAivwM1U2sG06XIjnXecffv8ZMDkcgcBOZLohAvbmzfq8OcyIwq8dXgI_c&new=https%3A%2F%2Fwww.doheny.com%2F" target="_blank" rel="noopener">Doheny's</a> provides a comprehensive range of safety equipment, including pool covers, alarms, and fencing options. Their selection of winter covers, safety covers, and solar covers helps protect your pool investment while reducing maintenance requirements during off-seasons.
+                </p>
+
+                <h2>Expert Support and Resources</h2>
+                <p>
+                    What sets <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=a39cSdAf3BrOAivwM1U2sG06XIjnXecffv8ZMDkcgcBOZLohAvbmzfq8OcyIwq8dXgI_c&new=https%3A%2F%2Fwww.doheny.com%2F" target="_blank" rel="noopener">Doheny's</a> apart is their commitment to customer education and support. Their team of pool care experts offers guidance on everything from basic water testing to complex equipment installation. The company provides detailed product information, how-to guides, and troubleshooting resources to help pool owners maintain their pools with confidence.
+                </p>
+
+                <div class="info-card">
+                    <h3>Professional Consultation Services</h3>
+                    <p>
+                        Whether you're a new pool owner or an experienced professional, <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=a39cSdAf3BrOAivwM1U2sG06XIjnXecffv8ZMDkcgcBOZLohAvbmzfq8OcyIwq8dXgI_c&new=https%3A%2F%2Fwww.doheny.com%2F" target="_blank" rel="noopener">Doheny's</a> expert staff can help you select the right products for your specific needs. They offer personalized recommendations based on pool size, type, usage patterns, and local climate conditions.
+                    </p>
+                </div>
+
+                <h2>Seasonal Maintenance Essentials</h2>
+                <p>
+                    Pool maintenance requirements change with the seasons, and <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=a39cSdAf3BrOAivwM1U2sG06XIjnXecffv8ZMDkcgcBOZLohAvbmzfq8OcyIwq8dXgI_c&new=https%3A%2F%2Fwww.doheny.com%2F" target="_blank" rel="noopener">Doheny's</a> provides seasonal products and guidance to help pool owners prepare for summer openings, maintain peak-season performance, and properly winterize their pools. Their comprehensive approach ensures your pool remains in excellent condition year-round.
+                </p>
+
+                <div class="features-list">
+                    <h3>Seasonal Pool Care Checklist</h3>
+                    <ul>
+                        <li><strong>Spring:</strong> Opening kits, startup chemicals, and equipment inspection tools</li>
+                        <li><strong>Summer:</strong> Regular maintenance supplies, algae prevention, and water testing kits</li>
+                        <li><strong>Fall:</strong> Leaf removal tools, enzyme treatments, and pre-winter preparation products</li>
+                        <li><strong>Winter:</strong> Closing kits, antifreeze, and winter covers for complete protection</li>
+                    </ul>
+                </div>
+
+                <h2>Energy-Efficient Solutions</h2>
+                <p>
+                    In today's environmentally conscious world, <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=a39cSdAf3BrOAivwM1U2sG06XIjnXecffv8ZMDkcgcBOZLohAvbmzfq8OcyIwq8dXgI_c&new=https%3A%2F%2Fwww.doheny.com%2F" target="_blank" rel="noopener">Doheny's</a> offers numerous energy-efficient products that help reduce operating costs while maintaining optimal pool conditions. Variable-speed pumps, LED lighting, solar heaters, and efficient filtration systems contribute to lower energy consumption and reduced environmental impact.
+                </p>
+
+                <h2>Replacement Parts and Repairs</h2>
+                <p>
+                    When pool equipment needs repair or replacement, <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=a39cSdAf3BrOAivwM1U2sG06XIjnXecffv8ZMDkcgcBOZLohAvbmzfq8OcyIwq8dXgI_c&new=https%3A%2F%2Fwww.doheny.com%2F" target="_blank" rel="noopener">Doheny's</a> extensive inventory of replacement parts ensures you can quickly get your pool back in operation. From o-rings and gaskets to motor replacements and control boards, they stock parts for all major brands and models.
+                </p>
+
+                <div class="quote-box">
+                    "Having access to quality replacement parts means the difference between a quick repair and extended downtime. Our comprehensive parts inventory helps pool owners and service professionals keep pools running smoothly with minimal interruption."
+                </div>
+
+                <h2>Transform Your Pool Experience</h2>
+                <p>
+                    Beyond basic maintenance, <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=a39cSdAf3BrOAivwM1U2sG06XIjnXecffv8ZMDkcgcBOZLohAvbmzfq8OcyIwq8dXgI_c&new=https%3A%2F%2Fwww.doheny.com%2F" target="_blank" rel="noopener">Doheny's</a> offers products that enhance your pool experience. From colorful LED lighting systems to water features, heating solutions, and recreational accessories, they help transform ordinary pools into extraordinary backyard retreats.
+                </p>
+
+                <p>
+                    With competitive pricing, fast shipping, and exceptional customer service, <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=a39cSdAf3BrOAivwM1U2sG06XIjnXecffv8ZMDkcgcBOZLohAvbmzfq8OcyIwq8dXgI_c&new=https%3A%2F%2Fwww.doheny.com%2F" target="_blank" rel="noopener">Doheny's</a> makes pool maintenance more manageable and affordable. Their commitment to quality products and customer satisfaction has made them a preferred choice for pool owners nationwide.
+                </p>
+
+                <div class="cta-section" style="text-align: center; margin: 3rem 0;">
+                    <p style="font-size: 1.2rem; margin-bottom: 1.5rem;">
+                        Ready to simplify your pool maintenance routine? Explore the complete selection of pool care products and equipment available at <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=a39cSdAf3BrOAivwM1U2sG06XIjnXecffv8ZMDkcgcBOZLohAvbmzfq8OcyIwq8dXgI_c&new=https%3A%2F%2Fwww.doheny.com%2F" target="_blank" rel="noopener">Doheny's</a> and discover why they're the trusted choice for pool owners everywhere.
+                    </p>
+                    <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=a39cSdAf3BrOAivwM1U2sG06XIjnXecffv8ZMDkcgcBOZLohAvbmzfq8OcyIwq8dXgI_c&new=https%3A%2F%2Fwww.doheny.com%2F" target="_blank" rel="noopener" class="cta-button">
+                        Shop Pool Supplies at Doheny's
+                    </a>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">About Summasite</h3>
+                    <p>Your trusted source for sustainable products and eco-conscious living tips.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Categories</h3>
+                    <ul>
+                        <li><a href="#">Pool Care</a></li>
+                        <li><a href="#">Home Maintenance</a></li>
+                        <li><a href="#">Outdoor Living</a></li>
+                        <li><a href="#">Water Quality</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p>Subscribe for tips and exclusive offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Summasite. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
