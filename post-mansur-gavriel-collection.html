@@ -260,6 +260,150 @@
             background: #f8f8f8;
         }
 
+        /* Related Articles Section */
+        .related-posts {
+            margin-top: 80px;
+            padding-top: 60px;
+            border-top: 3px solid #f0f0f0;
+        }
+
+        .related-posts h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 40px;
+            text-align: center;
+            position: relative;
+        }
+
+        .related-posts h3::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #e8b4a3 0%, #d4968b 100%);
+            border-radius: 2px;
+        }
+
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .related-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 2px solid transparent;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .related-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(232, 180, 163, 0.25);
+            border-color: #e8b4a3;
+        }
+
+        .related-card a {
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .related-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            transition: all 0.4s ease;
+        }
+
+        .related-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .related-card a {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .related-card > a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 220px;
+            background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 100%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            z-index: 1;
+        }
+
+        .related-card:hover > a::before {
+            opacity: 1;
+        }
+
+        .related-card h4 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #2c3e50;
+            line-height: 1.4;
+            margin: 0 0 12px 0;
+            padding: 24px 24px 0 24px;
+            transition: color 0.3s ease;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .related-card:hover h4 {
+            color: #e8b4a3;
+        }
+
+        .related-card p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #666;
+            margin: 0;
+            padding: 0 24px 24px 24px;
+            flex-grow: 1;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .related-card::after {
+            content: 'Read More →';
+            position: absolute;
+            bottom: 24px;
+            right: 24px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #e8b4a3;
+            opacity: 0;
+            transform: translateX(-10px);
+            transition: all 0.3s ease;
+        }
+
+        .related-card:hover::after {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .post-title {
@@ -276,6 +420,19 @@
 
             .cta-title {
                 font-size: 2rem;
+            }
+
+            .related-posts h3 {
+                font-size: 1.8rem;
+            }
+
+            .related-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .related-card img {
+                height: 200px;
             }
         }
     </style>
